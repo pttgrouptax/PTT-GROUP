@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PTT Group — IT, Taxation & Accounting Solutions</title>
+
+  <meta name="description" content="PTT Group provides comprehensive IT solutions, cybersecurity, taxation, and accounting services to help businesses in India grow securely and efficiently.">
+  <meta name="keywords" content="PTT Group, IT Services, Cybersecurity, Taxation Services, Accounting, Cloud Solutions, AI Integration, Business Automation, New Delhi">
+  <meta name="author" content="PTT Group">
+
+  <meta property="og:title" content="PTT Group – IT, Taxation & Accounting Experts">
+  <meta property="og:description" content="Empowering businesses with cutting-edge IT solutions and expert financial services.">
+  <meta property="og:type" content="website">
+
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PTT Group",
+    "url": "https://pttgroup.com",
+    "logo": "ptt_logo-removebg-preview.png",
+    "description": "PTT Group provides IT solutions, taxation, and accounting services.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "New Delhi",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91 9910911097",
+      "contactType": "customer service",
+      "email": "pttgrouptax@gmail.com"
+    }
+  }
+  </script>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior: smooth; }
+    body { background:#ffffff; color:#000000; font-family:'Segoe UI', sans-serif; overflow-x:hidden; }
+
+    /* Clean white background */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-color: #f3f3f3;
+      z-index: -1;
+    }
+
+    header {
+      width:100%;
+      padding:15px 4%;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:fixed;
+      top:0;
+      left:0;
+      background:#ffffff;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+      z-index:1000;
+      transition: all 0.3s ease;
+    }
+    .container {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      width:100%;
+      max-width:1400px;
+      margin:0 auto;
+      padding:0 15px;
+    }
+    .logo {
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .logo img {
+      height:60px;
+      width:auto;
+      object-fit:contain;
+    }
+    .logo span {
+      font-size:18px;
+      font-weight:700;
+      color:#0067b8;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+
+    .nav-links {
+      display:flex;
+      gap:40px; 
+      list-style:none;
+      align-items:center;
+    }
+    nav a {
+      position:relative;
+      text-decoration:none;
+      color:#333333;
+      font-size:15px;
+      font-weight:400;
+      transition:all 0.3s ease;
+      padding:8px 6px;
+      white-space:nowrap;
+      border-radius:4px;
+    }
+    nav a:hover {
+      color:#0067b8;
+      background:rgba(0,103,184,0.05);
+    }
+
+    #mobileMenu {
+      font-size:28px;
+      color:#0067b8;
+      cursor:pointer;
+      display:none;
+    }
+
+    .hero {
+      height:80vh;
+      position:relative;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:left;
+      color:#000000;
+      padding:0 4%;
+    }
+    .swiper {
+      width:100%;
+      height:100%;
+    }
+    .swiper-slide {
+      background-size:cover;
+      background-position:center;
+      position:relative;
+    }
+    .swiper-slide::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to right, rgba(255,255,255,0.9), transparent);
+      z-index:1;
+    }
+    .hero-content {
+      position:relative;
+      z-index:2;
+      max-width:700px;
+      padding:0 20px;
+    }
+    .hero h2 {
+      font-size:48px;
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+    .hero p {
+      font-size:22px;
+      margin-bottom:30px;
+      opacity:0.9;
+    }
+    .cta-btn {
+      padding:14px 36px;
+      background:#0067b8;
+      color:#ffffff;
+      font-size:18px;
+      font-weight:500;
+      border:none;
+      border-radius:4px;
+      cursor:pointer;
+      transition:all 0.3s ease;
+    }
+    .cta-btn:hover {
+      background:#005a9e;
+      transform:scale(1.02);
+    }
+
+    @keyframes fadeInUp {
+      from { opacity:0; transform:translateY(30px); }
+      to { opacity:1; transform:translateY(0); }
+    }
+
+    section { padding:100px 4%; }
+    #home { padding: 0; }
+    h2.section-title { 
+      font-size:36px; 
+      margin-bottom:20px; 
+      color:#0067b8; 
+      text-align:left; 
+      letter-spacing:0.5px; 
+      position:relative;
+    }
+    h2.section-title::after {
+      content:"";
+      width:60px;
+      height:3px;
+      background:#0067b8;
+      display:block;
+      margin:15px 0;
+      border-radius:1px;
+    }
+    p.section-subtitle { 
+      text-align:left; 
+      max-width:700px; 
+      margin:0 0 50px; 
+      opacity:0.8; 
+      font-size:18px; 
+      line-height:1.6;
+    }
+
+    .mvv-wrapper, .about-wrapper, .why-list, .group-grid, .service-grid {
+      display:flex;
+      flex-wrap:wrap;
+      gap:30px;
+      margin-top:50px;
+    }
+    .about-box, .why-item, .group-card, .service-card {
+      background:#ffffff;
+      padding:30px;
+      border-radius:8px;
+      border:1px solid #e0e0e0;
+      transition:all 0.3s ease;
+      flex:1;
+      min-width:300px;
+    }
+    .about-box:hover, .why-item:hover, .group-card:hover, .service-card:hover {
+      transform:translateY(-10px);
+      box-shadow:0 10px 20px rgba(0,103,184,0.1);
+    }
+
+    .contact-box {
+      background:#ffffff;
+      padding:40px;
+      border-radius:8px;
+      border:1px solid #e0e0e0;
+      max-width:600px;
+      margin:30px auto 0;
+      box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    }
+    .contact-box label {
+      display:block;
+      margin:10px 0 5px;
+      font-weight:400;
+      color:#333333;
+    }
+    .contact-box input, .contact-box textarea {
+      width:100%;
+      padding:12px;
+      margin-bottom:10px;
+      border-radius:4px;
+      border:1px solid #cccccc;
+      outline:none;
+      background:#f9f9f9;
+      font-size:15px;
+      transition:border 0.3s;
+    }
+    .contact-box input:focus, .contact-box textarea:focus {
+      border-color:#0067b8;
+      background:#ffffff;
+    }
+    .contact-box button {
+      padding:14px 30px;
+      background:#0067b8;
+      border:none;
+      border-radius:4px;
+      font-size:16px;
+      font-weight:500;
+      cursor:pointer;
+      color:#ffffff;
+      transition:all 0.3s;
+    }
+    .contact-box button:hover {
+      background:#005a9e;
+    }
+    .success-message {
+      display:none;
+      margin-top:15px;
+      padding:12px;
+      background:#d4edda;
+      color:#155724;
+      border-radius:4px;
+      text-align:center;
+      font-weight:400;
+    }
+    .error-message {
+      color:#d32f2f;
+      font-size:13px;
+      margin-top:-6px;
+      margin-bottom:10px;
+      display:none;
+    }
+
+    .img-wrapper {
+      text-align: left;
+      margin: 50px 0;
+    }
+    .img-wrapper img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    /* Company Profile Cards */
+    .profile-grid {
+      display:flex;
+      flex-wrap:wrap;
+      gap:30px;
+      margin-top:50px;
+    }
+    .profile-card {
+      background:#ffffff;
+      border-radius:8px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.05);
+      transition:all 0.3s ease;
+      flex:1;
+      min-width:300px;
+    }
+    .profile-card:hover {
+      transform:translateY(-10px);
+      box-shadow:0 15px 25px rgba(0,103,184,0.1);
+    }
+    .profile-card-header {
+      height:150px;
+      background:#0067b8;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#ffffff;
+      font-size:40px;
+    }
+    .profile-card-body {
+      padding:30px;
+      text-align:left;
+    }
+    .profile-card-body h3 {
+      font-size:22px;
+      margin-bottom:14px;
+      color:#0067b8;
+    }
+    .profile-card-body p {
+      line-height:1.6;
+      opacity:0.85;
+    }
+
+    /* HORIZONTAL SCROLLING GALLERY */
+    .horizontal-gallery {
+      margin-top: 50px;
+      overflow: hidden;
+      padding: 15px 0;
+      position: relative;
+    }
+
+    .gallery-track {
+      display: flex;
+      gap: 20px;
+      animation: scrollLeft 40s linear infinite;
+      width: calc(350px * 12 + 20px * 11);
+    }
+
+    .gallery-track:hover {
+      animation-play-state: paused;
+    }
+
+    .gallery-card {
+      flex: 0 0 350px;
+      height: 250px;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+      color: #ffffff;
+    }
+
+    .gallery-overlay h4 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    @keyframes scrollLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @media (max-width: 768px) {
+      .gallery-card {
+        flex: 0 0 250px;
+        height: 200px;
+      }
+      .gallery-track { gap: 15px; }
+      .gallery-overlay h4 { font-size: 14px; }
+    }
+
+    footer {
+      background:#f3f3f3;
+      margin-top:80px;
+      border-top:1px solid #dddddd;
+    }
+    .footer-top {
+      display:flex;
+      flex-wrap:wrap;
+      gap:40px;
+      justify-content:space-around;
+      padding:60px 4%;
+      max-width:1200px;
+      margin:auto;
+    }
+    .footer-top div { flex:1; min-width:200px; }
+    .social-links {
+      text-align:center;
+      padding:15px 0;
+    }
+    .social-links a {
+      margin:0 15px;
+      font-size:24px;
+      color:#0067b8;
+      transition:all 0.3s;
+    }
+    .social-links a:hover {
+      color:#005a9e;
+      transform:scale(1.1);
+    }
+   
+
+/* Flex layout to push footer down */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* All main content grows */
+body > header,
+body > section {
+  flex-shrink: 0;
+}
+
+/* Footer sticks to bottom naturally */
+footer {
+  margin-top: auto;
+  background: #f3f3f3;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.05);
+}
+
+/* Footer top layout refinement */
+.footer-top {
+  padding: 50px 4% 40px;
+  gap: 40px;
+}
+
+.footer-top h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #0067b8;
+  letter-spacing: 0.5px;
+}
+
+.footer-top p,
+.footer-top a {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.footer-top a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-top a:hover {
+  color: #0067b8;
+}
+
+/* Social icons centered & spaced */
+.social-links {
+  padding: 20px 0 10px;
+  border-top: 1px solid #dddddd;
+}
+
+.social-links a {
+  font-size: 22px;
+}
+
+/* Footer bottom bar (NOT fixed anymore) */
+.footer-bottom {
+  position: relative;
+  padding: 15px 10px;
+  background: #ffffff;
+  font-size: 13px;
+  color: #666666;
+  border-top: 1px solid #dddddd;
+}
+
+/* Mobile footer spacing */
+@media (max-width: 768px) {
+  .footer-top {
+    text-align: left;
+  }
+
+  .footer-top div {
+    margin-bottom: 20px;
+  }
+}
+
+    @media (max-width: 1200px) {
+      .nav-links { gap:30px; }
+    }
+    @media (max-width: 1024px) {
+      .nav-links {
+        position:fixed;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#ffffff;
+        flex-direction:column;
+        padding:40px 0;
+        gap:25px;
+        transform:translateY(-150%);
+        transition:all 0.4s ease;
+        box-shadow:0 8px 20px rgba(0,0,0,0.1);
+      }
+      .nav-links.active { transform:translateY(0); }
+      nav a { font-size:16px; padding:10px 15px; white-space:normal; text-align:left; }
+      #mobileMenu { display:block; }
+      .hero h2 { font-size:36px; }
+      .hero p { font-size:18px; }
+      section { padding:80px 4%; }
+    }
+    /* Vision & Mission image styling */
+.image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Values box full width */
+.values-box {
+  flex-basis: 100%;
+  text-align: left;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .image-box {
+    order: 2;
+  }
+}
+    /* Dropdown Styles */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      border-radius: 6px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      min-width: 200px;
+      list-style: none;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu li a {
+      display: block;
+      padding: 10px 20px;
+      color: #333333;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+    .dropdown-menu li a:hover {
+      background: rgba(0,103,184,0.05);
+      color: #0067b8;
+    }
+    @media (max-width: 1024px) {
+      .dropdown-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+        background: transparent;
+        border-radius: 0;
+        padding: 0 0 0 15px;
+      }
+      .dropdown:hover .dropdown-menu {
+        display: none;
+      }
+      .dropdown.active .dropdown-menu {
+        display: block;
+      }
+    }
+.project-gallery {
+  padding: 60px 15px;
+  background: #ffffff;
+  font-family: Segoe UI, sans-serif;
+}
+.gallery-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* FLIP CARD */
+.flip-card {
+  perspective: 1000px;
+  cursor: pointer;
+  flex: 1;
+  min-width: 280px;
+}
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+/* FLIP ON HOVER & CLICK */
+.flip-card:hover .flip-inner,
+.flip-card.active .flip-inner {
+  transform: rotateY(180deg);
+}
+/* FRONT & BACK */
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  overflow: hidden;
+}
+/* FRONT */
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flip-front.blank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+/* BACK */
+.flip-back {
+  background: #ffffff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dddddd;
+}
+.flip-back h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #0067b8;
+}
+/* BUTTON */
+.read-btn {
+  background: #0067b8;
+  color: #ffffff;
+  padding: 8px 18px;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.read-btn:hover {
+  background: #005a9e;
+}
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .flip-inner {
+    height: 180px;
+  }
+}
+.testimonial-section {
+  padding: 60px 15px;
+  background: #f3f3f3;
+  font-family: Segoe UI, sans-serif;
+  text-align: left;
+}
+.section-title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #0067b8;
+  position: relative;
+}
+.testimonial-slider {
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
+}
+.testimonial-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+.testimonial-card {
+  min-width: 50%;
+  background: #ffffff;
+  padding: 30px;
+  margin: 0 8px;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  position: relative;
+}
+.quote {
+  font-size: 50px;
+  color: #0067b8;
+  margin-bottom: 8px;
+}
+.testimonial-card h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333333;
+}
+.testimonial-card p {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+}
+/* DOTS */
+.dots {
+  margin-top: 20px;
+}
+.dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background: #cccccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dots span.active {
+  background: #0067b8;
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .testimonial-card {
+    min-width: 100%;
+  }
+}
+.client-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+:root {
+  --primary-blue: #0067b8;
+  --text-dark: #000000;
+  --bg-light: #ffffff;
+  --white: #ffffff;
+  --shadow-color: rgba(0,103,184,0.1);
+}
+
+body {
+  --transition: all 0.3s ease;
+}
+
+header {
+  background: #ffffff;
+}
+
+.nav-links a:hover {
+  color: var(--primary-blue);
+  background: rgba(0,103,184,0.05);
+}
+
+.cta-btn {
+  background: var(--primary-blue);
+  color: var(--white);
+}
+
+.cta-btn:hover {
+  background: #005a9e;
+  color: var(--white);
+}
+
+section {
+  background: var(--bg-light);
+}
+
+h2.section-title {
+  color: var(--primary-blue);
+}
+
+h2.section-title::after {
+  background: var(--primary-blue);
+}
+
+.about-box, .why-item, .service-card, .profile-card {
+  background: var(--white);
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.about-box:hover, .why-item:hover, .service-card:hover, .profile-card:hover {
+  box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.service-card h3 {
+  color: var(--primary-blue);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 12px;
+}
+
+.contact-box {
+  background: var(--white);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.contact-box button {
+  background: var(--primary-blue);
+}
+
+.contact-box button:hover {
+  background: #005a9e;
+}
+
+.footer-top {
+  background: #f3f3f3;
+}
+
+.social-links a:hover {
+  color: #005a9e;
+}
+
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <img src="ptt_logo-removebg-preview.png" alt="PTT Group Logo">
+        <span>PTT GROUP</span>
+      </div>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li class="dropdown">
+            <a href="#about">About Us</a>
+            <ul class="dropdown-menu">
+              <li><a href="#who-we-are">Who We Are</a></li>
+              <li><a href="#our-culture">Our Culture</a></li>
+              <li><a href="#what-we-do">What We Do</a></li>
+              <li><a href="#our-commitment">Our Commitment</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#gallery">Gallery</a>
+            <ul class="dropdown-menu">
+              <li><a href="#it-solutions">Information Technology Solutions</a></li>
+              <li><a href="#taxation-services">Taxation & Compliance Services</a></li>
+              <li><a href="#accounting-services">Accounting & Financial Management</a></li>
+              <li><a href="#cybersecurity">Cybersecurity & Data Protection</a></li>
+              <li><a href="#business-consulting">Business Advisory & Consulting</a></li>
+              <li><a href="#cloud-automation">Cloud, AI & Automation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#vision-mission">Vision & Mission</a>
+            <ul class="dropdown-menu">
+              <li><a href="#our-mission">Our Mission</a></li>
+              <li><a href="#our-values">Our Values</a></li>
+              <li><a href="#our-vision">Our Vision</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#why">Why Choose Us</a>
+            <ul class="dropdown-menu">
+              <li><a href="#proven-expertise">Proven Expertise</a></li>
+              <li><a href="#client-focused">Client-Focused</a></li>
+              <li><a href="#security-first">Security First</a></li>
+              <li><a href="#growth-oriented">Growth Oriented</a></li>
+              <li><a href="#247-support">24/7 Support</a></li>
+              <li><a href="#cost-effective">Cost-Effective</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#profile">Company Profile</a>
+            <ul class="dropdown-menu">
+              <li><a href="#our-foundation">Our Foundation & Growth</a></li>
+              <li><a href="#headquarters">Headquarters & National Presence</a></li>
+              <li><a href="#innovation">Innovation & Future Outlook</a></li>
+              <li><a href="#our-promise">Our Core Promise & Ethics</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#services">Business Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="#custom-software-development">Custom Software Development</a></li>
+              <li><a href="#cybersecurity-solutions">Cybersecurity Solutions</a></li>
+              <li><a href="#accounting-taxation">Accounting & Taxation</a></li>
+              <li><a href="#cloud-migration">Cloud Migration</a></li>
+              <li><a href="#ai-integration">AI Integration</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div id="mobileMenu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('https://www.pngmagic.com/webp_images/elegant-website-hero-background-for-companies_OG1P.webp')"></div>
+        <div class="swiper-slide" style="background-image:url('https://pngmagic.com/webp_images/royalty-free-hero-backgrounds-for-business-websites_S8L.webp')"></div>
+        <div class="swiper-slide" style="background-image:url('https://pngmagic.com/webp_images/corporate-website-hero-background-template_AXV5.webp')"></div>
+        <div class="swiper-slide" style="background-image:url('https://images.pexels.com/photos/2451566/pexels-photo-2451566.jpeg?cs=srgb&dl=pexels-proxyclick-2451566.jpg&fm=jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('https://thumbs.dreamstime.com/b/minimal-cyan-gradient-corporate-hero-background-abstract-banner-minimal-cyan-gradient-corporate-hero-background-soft-422312396.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1542744095-291d1f67b221?w=1400')"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="hero-content">
+      <h2>Guarding Your Digital World With Next-Gen Technologies</h2>
+      <p>PTT Group delivers comprehensive IT, taxation, accounting & automation solutions that empower businesses to scale securely and efficiently.</p>
+      <a href="#about"><button class="cta-btn">Explore More</button></a>
+    </div>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2 class="section-title">About Us</h2>
+    <p class="section-subtitle">Your trusted partner for IT and financial excellence in a digital world.</p>
+
+    <div class="about-wrapper">
+      <div class="about-box" id="who-we-are" data-aos="fade-right">
+        <i class="fas fa-users fa-3x" style="color:#0067b8; margin-bottom: 15px;"></i>
+        <h3>Who We Are</h3>
+        <p>Founded in 2021 in New Delhi, India, PTT Group is a dynamic multi-domain firm specializing in IT solutions, cybersecurity, taxation, and accounting services. We bridge the gap between technology and finance to help businesses thrive in an increasingly digital landscape.</p>
+        <p>Our multidisciplinary approach combines deep technical expertise with financial acumen, enabling us to deliver holistic solutions that drive operational efficiency, ensure regulatory compliance, and foster sustainable growth for our clients.</p>
+      </div>
+      <div class="about-box" id="our-culture" data-aos="fade-left">
+        <i class="fas fa-handshake fa-3x" style="color:#0067b8; margin-bottom: 15px;"></i>
+        <h3>Our Culture</h3>
+        <p>Our team thrives on collaboration, continuous learning, and innovation. We foster an inclusive, supportive environment where diverse ideas flourish, empowering every member to contribute meaningfully and deliver exceptional value to clients.</p>
+        <p>We invest heavily in professional development, encouraging certifications, workshops, and knowledge-sharing sessions to keep our team at the forefront of industry trends.</p>
+      </div>
+      <div class="about-box" id="what-we-do" data-aos="fade-right">
+        <i class="fas fa-tools fa-3x" style="color:#0067b8; margin-bottom: 15px;"></i>
+        <h3>What We Do</h3>
+        <p>We provide end-to-end services ranging from custom software development, cloud migration, and AI integration to GST/ITR compliance, tax planning, bookkeeping, audits, and AI-driven business automation.</p>
+        <p>Serving startups, SMEs, and large enterprises across sectors like manufacturing, e-commerce, healthcare, education, and finance, we tailor every solution to unique business challenges and goals.</p>
+      </div>
+      <div class="about-box" id="our-commitment" data-aos="fade-left">
+        <i class="fas fa-handshake-alt fa-3x" style="color:#0067b8; margin-bottom: 15px;"></i>
+        <h3>Our Commitment</h3>
+        <p>We promise reliable, secure, and scalable solutions backed by expert guidance and proactive support. Our client-first philosophy ensures transparency, timely delivery, and measurable results.</p>
+        <p>With a strong emphasis on data security, ethical practices, and long-term partnerships, we help businesses navigate complex challenges and achieve sustained success in a rapidly evolving digital economy.</p>
+      </div>
+    </div>
+
+   </section>
+
+
+  <!-- GALLERY -->
+  <section id="gallery" class="project-gallery" data-aos="fade-up">
+    <h2 class="section-title">Gallery</h2>
+    <p class="section-subtitle">Industries & sectors we actively serve with expertise</p>
+
+    <div class="gallery-grid">
+      <!-- CARD 1 -->
+      <div class="flip-card" id="it-solutions">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200" alt="IT Solutions">
+          </div>
+          <div class="flip-back">
+            <h3>Information Technology Solutions</h3>
+            <a href="#" class="read-btn">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 2 -->
+      <div class="flip-card" id="taxation-services">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="2.jpg" alt="Taxation Services">
+          </div>
+          <div class="flip-back">
+            <h3>Taxation & Compliance Services</h3>
+            <a href="#" class="read-btn">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 3 -->
+      <div class="flip-card" id="accounting-services">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="3.jpg" alt="Accounting Services">
+          </div>
+          <div class="flip-back">
+            <h3>Accounting & Financial Management</h3>
+            <a href="#" class="read-btn">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 4 -->
+      <div class="flip-card" id="cybersecurity">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="4.jpg" alt="Cybersecurity">
+          </div>
+          <div class="flip-back">
+            <h3>Cybersecurity & Data Protection</h3>
+            <a href="#" class="read-btn">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 5 -->
+      <div class="flip-card" id="business-consulting">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="5.jpg" alt="Business Consulting">
+          </div>
+          <div class="flip-back">
+            <h3>Business Advisory & Consulting</h3>
+            <a href="#" class="read-btn">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 6 -->
+      <div class="flip-card" id="cloud-automation">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="6.jpg" alt="Cloud & Automation">
+          </div>
+          <div class="flip-back">
+            <h3>Cloud, AI & Automation</h3>
+            <a href="#" class="read-btn">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="vision-mission" data-aos="fade-up">
+  <h2 class="section-title">Vision • Mission • Values</h2>
+  <p class="section-subtitle">
+    Built on excellence. Driven by innovation. Powered by trust.
+  </p>
+
+  <div class="mvv-wrapper">
+
+    <!-- Mission -->
+    <div class="about-box" id="our-mission" data-aos="fade-right">
+      <div class="emoji">🚀</div>
+      <h3>Our Mission</h3>
+     
+      <p>
+      To empower businesses with intelligent IT solutions and precise financial services that enable smarter, faster, and more confident decision-making at every level of the organization. We partner with startups, SMEs, and enterprises to transform complex challenges into streamlined, technology-driven opportunities.
+
+      We simplify intricate technology, compliance, and regulatory processes through secure, scalable, and future-ready solutions. By integrating advanced software development, cloud computing, cybersecurity, taxation, accounting, and automation, we help organizations enhance operational efficiency, ensure regulatory compliance, reduce risk, and achieve sustainable long-term growth in an ever-evolving digital economy.
+      </p>
+    </div>
+
+    <!-- CENTER COLUMN (Image + Values stacked) -->
+    <div class="center-stack">
+
+      <!-- Image -->
+      <div class="about-box image-box" data-aos="zoom-in">
+        <img src="vission and mission.png" alt="Vision Mission Illustration">
+      </div>
+
+      <!-- Values -->
+      <div class="about-box values-box" id="our-values" data-aos="fade-up">
+        <div class="emoji">💎</div>
+        <h3>Our Values</h3>
+        <p>
+          Integrity, innovation, transparency, reliability, and customer-first
+          thinking define who we are and how we work.
+        </p>
+        <p>
+          These values guide our decisions, strengthen trust, and help us build
+          long-term partnerships with our clients.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Vision -->
+    <div class="about-box" id="our-vision" data-aos="fade-left">
+      <div class="emoji">🌍</div>
+      <h3>Our Vision</h3>
+      
+      
+      <p>
+       To become a globally trusted organization where advanced technology, financial expertise, and strategic insight converge to transform businesses and industries. We envision a future where organizations of all sizes leverage digital innovation and sound financial governance to operate with agility, transparency, and confidence.
+
+      Our vision is to set new benchmarks in IT services, cloud transformation, cybersecurity, artificial intelligence, and professional accounting by delivering solutions that are innovative, secure, compliant, and scalable. Through continuous learning, ethical practices, and customer-centric innovation, we aim to drive digital excellence, long-term value creation, and sustainable growth for our clients worldwide.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <section id="why" data-aos="fade-up">
+    <h2 class="section-title">Why Choose Us</h2>
+    <p class="section-subtitle">We stand out with expertise, reliability, and a client-centric approach.</p>
+
+    <div class="why-list">
+      <div class="why-item" id="proven-expertise" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-shield-alt fa-3x" style="color:#0067b8;"></i>
+        <h3>Proven Expertise</h3>
+        <p>Years of experience in IT and finance with a proven track record of successful projects across India.</p>
+      </div>
+      <div class="why-item" id="client-focused" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-users fa-3x" style="color:#0067b8;"></i>
+        <h3>Client-Focused</h3>
+        <p>Tailored solutions designed to meet your unique business needs and goals.</p>
+      </div>
+      <div class="why-item" id="security-first" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-lock fa-3x" style="color:#0067b8;"></i>
+        <h3>Security First</h3>
+        <p>Advanced cybersecurity measures to protect your data and operations at all times.</p>
+      </div>
+      <div class="why-item" id="growth-oriented" data-aos="fade-up" data-aos-delay="400">
+        <i class="fas fa-chart-line fa-3x" style="color:#0067b8;"></i>
+        <h3>Growth Oriented</h3>
+        <p>Strategies that drive efficiency, compliance, and sustainable business growth.</p>
+      </div>
+      <div class="why-item" id="247-support" data-aos="fade-up" data-aos-delay="500">
+        <i class="fas fa-headset fa-3x" style="color:#0067b8;"></i>
+        <h3>24/7 Support</h3>
+        <p>Dedicated support team available whenever you need assistance.</p>
+      </div>
+      <div class="why-item" id="cost-effective" data-aos="fade-up" data-aos-delay="600">
+        <i class="fas fa-rupee-sign fa-3x" style="color:#0067b8;"></i>
+        <h3>Cost-Effective</h3>
+        <p>Competitive pricing without compromising on quality or results.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Company Profile with More Content -->
+  <section id="profile" data-aos="fade-up">
+    <h2 class="section-title">Company Profile</h2>
+    <p class="section-subtitle">A journey of innovation, trust, and excellence since 2021</p>
+
+    <div class="profile-grid">
+      <div class="profile-card" id="our-foundation" data-aos="fade-right">
+        <div class="profile-card-header"><i class="fas fa-building"></i></div>
+        <div class="profile-card-body">
+          <h3>Our Foundation & Growth</h3>
+          <p>Established in 2021 in New Delhi, PTT Group began as a passionate team determined to bridge advanced technology with expert financial services. In just a few years, we've grown exponentially, serving over 150 clients across diverse industries with high-impact, customized solutions.</p>
+          <p>Our rapid expansion is fueled by a commitment to quality, innovation, and client satisfaction, earning us recognition as a trusted partner for digital transformation and financial compliance.</p>
+        </div>
+      </div>
+
+      <div class="profile-card" id="headquarters" data-aos="fade-left">
+        <div class="profile-card-header"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="profile-card-body">
+          <h3>Headquarters & National Presence</h3>
+          <p>Headquartered in New Delhi with modern, state-of-the-art facilities, we maintain a strong pan-India presence through strategic partnerships and remote delivery capabilities.</p>
+          <p>Our centralized operations ensure seamless coordination, quick response times, and consistent service quality regardless of client location.</p>
+        </div>
+      </div>
+
+      <div class="profile-card" id="innovation" data-aos="fade-right">
+        <div class="profile-card-header"><i class="fas fa-rocket"></i></div>
+        <div class="profile-card-body">
+          <h3>Innovation & Future Outlook</h3>
+          <p>We have developed proprietary tools and frameworks in AI, cloud computing, cybersecurity, and automated compliance systems. As of 2025, PTT Group is actively expanding internationally while continuing to invest in emerging technologies like blockchain and advanced analytics.</p>
+          <p>Our R&D initiatives keep us ahead of industry trends, ensuring clients always benefit from cutting-edge, future-ready solutions.</p>
+        </div>
+      </div>
+
+      <div class="profile-card" id="our-promise" data-aos="fade-left">
+        <div class="profile-card-header"><i class="fas fa-handshake"></i></div>
+        <div class="profile-card-body">
+          <h3>Our Core Promise & Ethics</h3>
+          <p>We are deeply committed to ethical practices, complete transparency, data privacy, and building enduring partnerships based on trust and mutual growth.</p>
+          <p>Every engagement is guided by integrity, professionalism, and a genuine desire to contribute to our clients' long-term success and sustainability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" data-aos="fade-up">
+    <h2 class="section-title">Business Services</h2>
+    <p class="section-subtitle">Comprehensive solutions tailored for your success.</p>
+
+  <section class="services-section">
+  <div class="service-grid">
+
+    <!-- Custom Software Development -->
+    <div class="service-card" id="custom-software-development" data-aos="fade-up" data-aos-delay="100">
+      <i class="fas fa-code service-icon"></i>
+      <h3>Custom Software Development</h3>
+      <p>
+        We design and develop tailor-made web applications, mobile apps, automation systems, and enterprise-grade platforms aligned precisely with your business objectives and operational needs.
+      </p>
+      <div class="service-detail">
+        Our end-to-end software development process covers requirement analysis, system architecture, UI/UX design, development, testing, deployment, and ongoing support. 
+        Using modern, industry-leading technologies such as React, Node.js, Python, REST APIs, and cloud-native architectures, we build secure, scalable, and high-performance solutions. 
+        Every application is optimized for speed, usability, data security, and future scalability, ensuring seamless performance across devices and long-term business growth.
+      </div>
+    </div>
+
+    <!-- Cybersecurity Solutions -->
+    <div class="service-card" id="cybersecurity-solutions" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-shield-alt service-icon"></i>
+      <h3>Cybersecurity Solutions</h3>
+      <p>
+        Comprehensive cybersecurity services designed to protect your digital assets, data, and infrastructure from evolving cyber threats and vulnerabilities.
+      </p>
+      <div class="service-detail">
+        We offer vulnerability assessment and penetration testing (VAPT), network and application security audits, data protection strategies, and compliance support. 
+        Our cybersecurity experts implement advanced threat detection, risk mitigation frameworks, firewall and endpoint security, and incident response planning to safeguard your business against cyberattacks, data breaches, and operational disruptions.
+      </div>
+    </div>
+
+    <!-- Accounting & Taxation -->
+    <div class="service-card" id="accounting-taxation" data-aos="fade-up" data-aos-delay="300">
+      <i class="fas fa-calculator service-icon"></i>
+      <h3>Accounting & Taxation</h3>
+      <p>
+        Professional Chartered Accountant services covering accounting, taxation, compliance, audits, and payroll management for individuals, startups, SMEs, and corporate entities.
+      </p>
+      <div class="service-detail">
+        Our CA team provides end-to-end services including bookkeeping, GST registration & returns, income tax filing, TDS compliance, payroll processing, statutory and internal audits, and ROC filings. 
+        We ensure accurate financial reporting, timely statutory compliance, tax planning & optimization, and audit-ready documentation, helping businesses minimize tax risks, avoid penalties, and maintain financial transparency.
+      </div>
+    </div>
+
+    <!-- Cloud Migration -->
+    <div class="service-card" id="cloud-migration" data-aos="fade-up" data-aos-delay="400">
+      <i class="fas fa-cloud service-icon"></i>
+      <h3>Cloud Migration</h3>
+      <p>
+        Secure, seamless, and efficient migration of applications, databases, and IT infrastructure to cloud platforms with minimal downtime and maximum reliability.
+      </p>
+      <div class="service-detail">
+        Our cloud experts manage the complete migration lifecycle including infrastructure assessment, cloud architecture design, data migration, security configuration, performance optimization, and cost management. 
+        We specialize in AWS, Microsoft Azure, and Google Cloud, enabling businesses to achieve scalability, high availability, enhanced security, and reduced operational costs with continuous post-migration support.
+      </div>
+    </div>
+
+    <!-- AI Integration -->
+    <div class="service-card" id="ai-integration" data-aos="fade-up" data-aos-delay="500">
+      <i class="fas fa-robot service-icon"></i>
+      <h3>AI Integration</h3>
+      <p>
+        Advanced AI-powered solutions that automate processes, improve decision-making, and enhance customer experience through intelligent systems.
+      </p>
+      <div class="service-detail">
+        We integrate artificial intelligence into your existing platforms through AI chatbots, workflow automation, machine learning models, recommendation systems, and predictive analytics. 
+        Our AI solutions help businesses automate repetitive tasks, analyze large datasets, predict trends, improve operational efficiency, and deliver personalized user experiences using data-driven intelligence.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    
+     
+  </section>
+
+  <section class="testimonial-section" data-aos="fade-up">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial-track">
+        <!-- TESTIMONIAL 1 -->
+        <div class="testimonial-card">
+          <img class="client-photo" src="https://www.tirvingphoto.com/wp-content/uploads/2023/06/tirvingphoto-gallery_corporate-employee-CT-headshots_017.jpg" alt="Tech Innovations Inc.">
+          <div class="quote">“</div>
+          <p>
+            PTT Group's custom software development transformed our business operations. The team delivered a scalable solution on time and within budget.
+          </p>
+          <h4>Tech Innovations Inc.</h4>
+        </div>
+        <!-- TESTIMONIAL 2 -->
+        <div class="testimonial-card">
+          <img class="client-photo" src="https://learn.zoner.com/wp-content/uploads/2021/11/business-headshots-for-various-professional-talents-choose-the-right-poses-colors-and-more.jpg" alt="Finance Hub Ltd.">
+          <div class="quote">“</div>
+          <p>
+            Their taxation and accounting services ensured seamless compliance and optimized our financial strategies. Highly professional and reliable.
+          </p>
+          <h4>Finance Hub Ltd.</h4>
+        </div>
+        <!-- TESTIMONIAL 3 -->
+        <div class="testimonial-card">
+          <img class="client-photo" src="https://images.squarespace-cdn.com/content/v1/5cd26185ebfc7f7e4313856b/1581016648021-30OAQM4LEDISRDVU2ES7/new-york-headshot-photographers01.jpg" alt="E-Commerce Ventures">
+          <div class="quote">“</div>
+          <p>
+            PTT Group's cybersecurity solutions protected our platform from potential threats, giving us peace of mind to focus on growth.
+          </p>
+          <h4>E-Commerce Ventures</h4>
+        </div>
+        <!-- TESTIMONIAL 4 -->
+        <div class="testimonial-card">
+          <img class="client-photo" src="https://berksheadshots.com/wp-content/uploads/2022/11/professional-business-headshot-photo-114.jpg" alt="Cloud Solutions Corp.">
+          <div class="quote">“</div>
+          <p>
+            The cloud migration process was smooth and efficient, minimizing downtime and enhancing our system's performance.
+          </p>
+          <h4>Cloud Solutions Corp.</h4>
+        </div>
+        <!-- TESTIMONIAL 5 -->
+        <div class="testimonial-card">
+          <img class="client-photo" src="https://next38photo.com/wp-content/uploads/2021/02/sugar-hill-buford-atlanta-headshots-0071-1024x683.jpg" alt="AI Startups India">
+          <div class="quote">“</div>
+          <p>
+            Integrating AI into our workflows with PTT Group's help boosted our productivity and decision-making capabilities.
+          </p>
+          <h4>AI Startups India</h4>
+        </div>
+        <!-- TESTIMONIAL 6 -->
+        <div class="testimonial-card">
+          <img class="client-photo" src="ptt_logo-removebg-preview.png" alt="Healthcare Tech">
+          <div class="quote">“</div>
+          <p>
+            Exceptional support and expertise in business automation. PTT Group is our go-to partner for all IT needs.
+          </p>
+          <h4>Healthcare Tech</h4>
+        </div>
+        <!-- TESTIMONIAL 7 -->
+        <div class="testimonial-card">
+          <img class="client-photo" src="https://images.squarespace-cdn.com/content/v1/5f7341690ffdff36353f8c06/e71de372-b727-4ab4-a949-edc663274efe/Professional-headshot-for-medical-residencey-application-Rockville-Maryland.jpg" alt="Manufacturing Enterprises">
+          <div class="quote">“</div>
+          <p>
+            Their comprehensive services have streamlined our financial and IT operations, driving efficiency and growth.
+          </p>
+          <h4>Manufacturing Enterprises</h4>
+        </div>
+      </div>
+    </div>
+    <!-- DOTS -->
+    <div class="dots"></div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle">Have a project or need expert assistance? We are here to help.</p>
+
+    <div class="contact-box">
+      <form id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Full Name" required />
+        <div class="error-message" id="nameError"></div>
+
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="example@gmail.com" required />
+        <div class="error-message" id="emailError"></div>
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="+91 9910911097" required />
+        <div class="error-message" id="phoneError"></div>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <div class="error-message" id="messageError"></div>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="success-message" id="successMessage">
+        Thank you! Your message has been successfully submitted. We'll get back to you soon.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div>
+        <h3>PTT GROUP</h3>
+        <p>A multi-domain technology, taxation & accounting firm delivering secure, innovative and scalable solutions for modern businesses.</p>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <p><a href="#about">About Us</a></p>
+        <p><a href="#services">Our Services</a></p>
+        <p><a href="#products">Products</a></p>
+        <p><a href="#career">Careers</a></p>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <p>Help Center</p>
+        <p>Documentation</p>
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: pttgrouptax@gmail.com</p>
+        <p>Phone: +91 9910911097</p>
+        <p>Address: New Delhi, India</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ptt_.group/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/ptt-groups/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://x.com/ptt_group91" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://wa.me/919910911097" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 PTT Group — Guarding Your Digital World With Passion & Precision
+    </div>
+  </footer>
+
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+    // Hero Slider
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      speed: 1200,
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      pagination: { el: '.swiper-pagination', clickable: true },
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobileMenu');
+    const navLinks = document.getElementById('navLinks');
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      const icon = mobileMenu.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    });
+
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Enhanced Form Validation
+    const contactForm = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    const emailError = document.getElementById('emailError');
+    const phoneError = document.getElementById('phoneError');
+    const nameError = document.getElementById('nameError');
+    const messageError = document.getElementById('messageError');
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      let valid = true;
+
+      // Reset errors
+      emailError.textContent = '';
+      emailError.style.display = 'none';
+      phoneError.textContent = '';
+      phoneError.style.display = 'none';
+      nameError.textContent = '';
+      nameError.style.display = 'none';
+      messageError.textContent = '';
+      messageError.style.display = 'none';
+
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const name = document.getElementById('name').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (name === '') {
+        nameError.textContent = 'Please enter your full name.';
+        nameError.style.display = 'block';
+        valid = false;
+      }
+
+      if (!email.endsWith('@gmail.com') || email.length < 11) {
+        emailError.textContent = 'Email must be a valid Gmail address (e.g., example@gmail.com).';
+        emailError.style.display = 'block';
+        valid = false;
+      }
+
+      // Indian mobile number validation (10 digits, starts with 6-9)
+      const phoneRegex = /^[6-9]\d{9}$/;
+      const cleanPhone = phone.replace(/[\+\-\s]/g, '');
+      if (!phoneRegex.test(cleanPhone)) {
+        phoneError.textContent = 'Please enter a valid 10-digit Indian mobile number (e.g., 9910911097).';
+        phoneError.style.display = 'block';
+        valid = false;
+      }
+
+      if (message === '') {
+        messageError.textContent = 'Please enter your message.';
+        messageError.style.display = 'block';
+        valid = false;
+      }
+
+      if (valid) {
+        // Simulate successful submission
+        contactForm.style.opacity = '0.6';
+        setTimeout(() => {
+          successMessage.style.display = 'block';
+          contactForm.reset();
+          contactForm.style.opacity = '1';
+          setTimeout(() => {
+            successMessage.style.display = 'none';
+          }, 6000);
+        }, 800);
+      }
+    });
+    // Mobile Dropdown Toggle
+    const dropdowns = document.querySelectorAll('.dropdown > a');
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', (e) => {
+        if (window.innerWidth <= 1024) {
+          e.preventDefault();
+          const parent = dropdown.parentElement;
+          parent.classList.toggle('active');
+        }
+      });
+    });
+document.querySelectorAll(".flip-card").forEach(card => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("active");
+  });
+});
+const track = document.querySelector(".testimonial-track");
+const cards = document.querySelectorAll(".testimonial-card");
+const dotsContainer = document.querySelector(".dots");
+let index = 0;
+const total = cards.length;
+const visible = window.innerWidth < 768 ? 1 : 2;
+// Create dots
+for (let i = 0; i < Math.ceil(total / visible); i++) {
+  const dot = document.createElement("span");
+  if (i === 0) dot.classList.add("active");
+  dotsContainer.appendChild(dot);
+}
+const dots = document.querySelectorAll(".dots span");
+function updateSlider() {
+  const move = -(index * (100 / visible));
+  track.style.transform = `translateX(${move}%)`;
+  dots.forEach(d => d.classList.remove("active"));
+  dots[index]?.classList.add("active");
+}
+// Auto slide
+setInterval(() => {
+  index++;
+  if (index >= dots.length) index = 0;
+  updateSlider();
+}, 4000);
+// Dot click
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    index = i;
+    updateSlider();
+  });
+});
+  </script>
+</body>
+</html>
